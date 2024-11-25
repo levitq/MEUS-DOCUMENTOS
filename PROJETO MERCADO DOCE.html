@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar ou logar no Mercado Doce</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff2e6; }
+        .container { max-width: 600px; margin: 50px auto; padding: 20px; background-color: #ffffff; border: 1px solid #ccc; }
+        h1 { text-align: center; color: #ff6347; }
+        form { display: flex; flex-direction: column; }
+        input { margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px; background-color: #ff6347; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #ff4500; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mercado Doce</h1>
+ 
+        <form action="/register" method="post">
+            <h2>Crie sua Conta</h2>
+            <input type="text" name="username" placeholder="Nome de usuario" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <label for="accountType">Tipo de conta:</label>
+            <select name="accountType" id="accountType">
+                <option value="consumer">Consumidor</option>
+                <option value="vendor">Vendedor</option>
+            </select>
+            <button type="submit">Registrar</button>
+        </form>
+ 
+        <form action="/login" method="post">
+            <h2>Login</h2>
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

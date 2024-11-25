@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planilha com Botões Interativos</title>
+  <style>
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Planilha com Botões Interativos</h1>
+
+  <div>
+    <button class="button" onclick="alert('Botão 1 clicado!')">Botão 1</button>
+    <button class="button" onclick="alert('Botão 2 clicado!')">Botão 2</button>
+    <button class="button" onclick="alert('Botão 3 clicado!')">Botão 3</button>
+    <button class="button" onclick="alert('Botão 4 clicado!')">Botão 4</button>
+    <button class="button" onclick="alert('Botão 5 clicado!')">Botão 5</button>
+  </div>
+
+  <script>
+    // Exemplo de manipulação de eventos com JavaScript
+    const buttons = document.querySelectorAll('.button');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        alert(`Botão ${button.innerText} clicado!`);
+      });
+    });
+  </script>
+
+</body>
+</html>

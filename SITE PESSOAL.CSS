@@ -44,7 +44,7 @@ body {
   }
    
   .jumbotron {
-    background-color: #a30101af;
+    background-color: #06b0e4af;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -74,142 +74,242 @@ body {
     background-color: #fafafa;
     color: #000000;
   }
-  .escolhaarea{background-color: #000000;
+  .escolhaarea {
+    background-color: #000000;
     color: #fff;
     text-align: center;
-           }
-           .FUNDOAREAS{
-            background-color: #000000;
-            width: 100%;
-            height: 1000px;
-            border: 1px solid black;
-           } 
-            .buttonHUMANAS {
-              --glow-color: rgb(250, 255, 176);
-              --glow-spread-color: rgba(253, 255, 123, 0.781);
-              --enhanced-glow-color: rgb(253, 249, 189);
-              --btn-color: rgb(119, 118, 48);
-              border: .25em solid var(--glow-color);
-              padding: 1em 3em;
-              color: var(--glow-color);
-              font-size: 15px;
-              font-weight: bold;
-              background-color: var(--btn-color);
-              border-radius: 1em;
-              outline: none;
-              box-shadow: 0 0 1em .25em var(--glow-color),
-                     0 0 4em 1em var(--glow-spread-color),
-                     inset 0 0 .75em .25em var(--glow-color);
-              text-shadow: 0 0 .5em var(--glow-color);
-              position: relative;
-              transition: all 0.3s;
-              
-             } 
-             .buttonLIGUANGENS {
-                --glow-color: rgb(255, 176, 176);
-                --glow-spread-color: rgba(255, 123, 123, 0.781);
-                --enhanced-glow-color: rgb(255, 206, 206);
-                --btn-color: rgb(136, 61, 61);
-                border: .25em solid var(--glow-color);
-                padding: 1em 3em;
-                color: var(--glow-color);
-                font-size: 15px;
-                font-weight: bold;
-                background-color: var(--btn-color);
-                border-radius: 1em;
-                outline: none;
-                box-shadow: 0 0 1em .25em var(--glow-color),
-                       0 0 4em 1em var(--glow-spread-color),
-                       inset 0 0 .75em .25em var(--glow-color);
-                text-shadow: 0 0 .5em var(--glow-color);
-                position: relative;
-                transition: all 0.3s;
-             }
-             .buttonNATUREZA {
-              --glow-color: rgb(179, 255, 176);
-              --glow-spread-color: rgba(138, 255, 123, 0.781);
-              --enhanced-glow-color: rgb(208, 255, 206);
-              --btn-color: rgb(61, 136, 71);
-              border: .25em solid var(--glow-color);
-              padding: 1em 3em;
-              color: var(--glow-color);
-              font-size: 15px;
-              font-weight: bold;
-              background-color: var(--btn-color);
-              border-radius: 1em;
-              outline: none;
-              box-shadow: 0 0 1em .25em var(--glow-color),
-                     0 0 4em 1em var(--glow-spread-color),
-                     inset 0 0 .75em .25em var(--glow-color);
-              text-shadow: 0 0 .5em var(--glow-color);
-              position: relative;
-              transition: all 0.3s;
-             }
+  }
+  
+  .FUNDOAREAS {
+    background-color: #000000;
+    width: 100%;
+    height: 1000px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttonHUMANAS,
+  .buttonLIGUANGENS,
+  .buttonNATUREZA,
+  .buttonMATEMATICA,
+  .buttonTECNICO {
+    --glow-color: rgb(250, 255, 176);
+    --glow-spread-color: rgba(253, 255, 123, 0.781);
+    --enhanced-glow-color: rgb(253, 249, 189);
+    --btn-color: rgb(119, 118, 48);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                 0 0 4em 1em var(--glow-spread-color),
+                 inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .buttonLIGUANGENS {
+    --glow-color: rgb(255, 176, 176);
+    --glow-spread-color: rgba(255, 123, 123, 0.781);
+    --enhanced-glow-color: rgb(255, 206, 206);
+    --btn-color: rgb(136, 61, 61);
+  }
+  
+  .buttonNATUREZA {
+    --glow-color: rgb(179, 255, 176);
+    --glow-spread-color: rgba(138, 255, 123, 0.781);
+    --enhanced-glow-color: rgb(208, 255, 206);
+    --btn-color: rgb(61, 136, 71);
+  }
+  
+  .buttonMATEMATICA {
+    --glow-color: rgb(177, 176, 255);
+    --glow-spread-color: rgba(143, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(213, 206, 255);
+    --btn-color: rgb(75, 61, 136);
+  }
+  
+  .buttonTECNICO {
+    --glow-color: rgb(255, 214, 176);
+    --glow-spread-color: rgba(255, 202, 123, 0.781);
+    --enhanced-glow-color: rgb(255, 239, 206);
+    --btn-color: rgb(136, 103, 61);
+  }
+  
+  button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  }
+  
+  button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                 0 0 4em 2em var(--glow-spread-color),
+                 inset 0 0 .75em .25em var(--glow-color);
+  }
+  
+  button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+                 0 0 2.5em 2em var(--glow-spread-color),
+                 inset 0 0 .5em .25em var(--glow-color);
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .disciplinah {
+    background-color: #f7ec54;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+  }
+  .disciplina h2 {
+    margin-top: 0;
+  }
+    .FUNDO{
+      background-color: #292828;
+    width: 200%;
+    height: 1000px;
+    border: 1px solid black;
+    display: flex;
+   
+    }
+      .TITULOAREAS{
+        color: white;
+      }
 
-             .buttonMATEMATICA {
-              --glow-color: rgb(177, 176, 255);
-              --glow-spread-color: rgba(143, 123, 255, 0.781);
-              --enhanced-glow-color: rgb(213, 206, 255);
-              --btn-color: rgb(75, 61, 136);
-              border: .25em solid var(--glow-color);
-              padding: 1em 3em;
-              color: var(--glow-color);
-              font-size: 15px;
-              font-weight: bold;
-              background-color: var(--btn-color);
-              border-radius: 1em;
-              outline: none;
-              box-shadow: 0 0 1em .25em var(--glow-color),
-                     0 0 4em 1em var(--glow-spread-color),
-                     inset 0 0 .75em .25em var(--glow-color);
-              text-shadow: 0 0 .5em var(--glow-color);
-              position: relative;
-              transition: all 0.3s;
-             }
-             .buttonTECNICO {
-              --glow-color: rgb(255, 214, 176);
-              --glow-spread-color: rgba(255, 202, 123, 0.781);
-              --enhanced-glow-color: rgb(255, 239, 206);
-              --btn-color: rgb(136, 103, 61);
-              border: .25em solid var(--glow-color);
-              padding: 1em 3em;
-              color: var(--glow-color);
-              font-size: 15px;
-              font-weight: bold;
-              background-color: var(--btn-color);
-              border-radius: 1em;
-              outline: none;
-              box-shadow: 0 0 1em .25em var(--glow-color),
-                     0 0 4em 1em var(--glow-spread-color),
-                     inset 0 0 .75em .25em var(--glow-color);
-              text-shadow: 0 0 .5em var(--glow-color);
-              position: relative;
-              transition: all 0.3s;
-             }
-             button::after {
-              pointer-events: none;
-              content: "";
-              position: absolute;
-              top: 120%;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              background-color: var(--glow-spread-color);
-              filter: blur(2em);
-              opacity: .7;
-              transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-             }
-             
-             button:hover {
-              color: var(--btn-color);
-              background-color: var(--glow-color);
-              box-shadow: 0 0 1em .25em var(--glow-color),
-                     0 0 4em 2em var(--glow-spread-color),
-                     inset 0 0 .75em .25em var(--glow-color);
-             }
-             
-             button:active {
-              box-shadow: 0 0 0.6em .25em var(--glow-color),
-                     0 0 2.5em 2em var(--glow-spread-color),
-                     inset 0 0 .5em .25em var(--glow-color);
-             }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .disciplinan {
+        background-color: #98f88b;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+      }
+      .disciplina h2 {
+        margin-top: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .disciplinaL {
+        background-color: #c53c3c;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+      }
+      .disciplinaL h2 {
+        margin-top: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .disciplinaM {
+        background-color: #6466ee;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+      }
+      .disciplinaM h2 {
+        margin-top: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .disciplinaI {
+        background-color: #f5ad4e;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+      }
+      .disciplinaI h2 {
+        margin-top: 0;
+      }
+      
+.VOLTAR {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .VOLTAR::before, .VOLTAR::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .VOLTAR::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .VOLTAR::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .VOLTAR:hover::before, .VOLTAR:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .VOLTAR:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .VOLTAR:active {
+  filter: brightness(.8);
+ }
+ .VOLTAR {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  padding: 10px;
+  
+ }
+
+ .FUNDOSP{
+  body {
+    background-color: rgb(255, 128, 0); 
+    width: 100%;
+    height: 1000px;
+  }
+ }
